@@ -1,6 +1,6 @@
 {
   "name": "@digital-mineral/telemetry-witness",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Cryptographically verifiable compute receipt protocol for edge nodes.",
   "type": "module",
   "main": "./dist/index.js",
