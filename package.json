@@ -1,14 +1,33 @@
 {
   "name": "@digital-mineral/telemetry-witness",
-  "version": "0.1.0",
-  "description": "DePIN Proof-of-Compute oracle and cryptographic hardware witness",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "version": "1.0.0",
+  "description": "Cryptographically verifiable compute receipt protocol for edge nodes.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
   },
   "devDependencies": {
-    "@types/node": "^25.9.3",
-    "typescript": "^5.4.5"
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.4.0",
+    "typescript": "^5.4.0",
+    "vitest": "^1.6.0"
+  },
+  "author": "Digital Mineral Solutions LLC",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.2.1"
   }
 }
