@@ -12,5 +12,5 @@
     "sourceMap": true,
     "noUncheckedIndexedAccess": true
   },
-  "include": ["src/**/*", "test/**/*"]
+  "include": ["src/**/*"]
 }

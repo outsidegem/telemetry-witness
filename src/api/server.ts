@@ -1,7 +1,7 @@
-import express from 'express';
+import express, { type Express } from 'express';
 import { ReceiptVerifier, ComputeReceipt } from '../index.js';
 
-export function createWitnessApi(verifier: ReceiptVerifier) {
+export function createWitnessApi(verifier: ReceiptVerifier): Express {
   const app = express();
   app.use(express.json());
 

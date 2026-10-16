@@ -6,3 +6,4 @@ export * from './core/receipt.js';
 export * from './core/witness.js';
 export * from './core/identity.js';
 export * from './core/canonical.js';
+export * from './api/server.js';
